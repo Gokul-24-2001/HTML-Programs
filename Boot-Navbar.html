@@ -1,0 +1,203 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<title> Bootstrap Navbar Example </title>  
+<meta charset = "utf-8">  
+<meta name = "viewport" content = "width=device-width, initial-scale=1">  
+<link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel = "stylesheet">  
+<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>  
+</head>  
+<body>  
+<div class = "container mt-2">  
+<h4> Basic Navbar Function </h4>  
+<h4> Without (div)tag container-fluid we have to ise justify-content-center/end</h4>
+<nav class = "navbar navbar-expand-sm bg-dark justify-content-end">  
+<ul class = "navbar-nav">  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> First </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Second </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Third </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Fourth </a>  
+</li>  
+</ul>  
+</nav>  
+<div class = "container mt-2">  
+<p> A Web page's top navigation header is referred to as a navbar or navigation bar. </p>  
+</div>  
+</div>  <br>
+<h1> Vertical Navbar</h1><br>
+<div class = "container mt-2">  
+<h4> Vertical Navbar Function </h4>  
+<nav class = "navbar bg-light">  
+<div class = "container-fluid">  
+<ul class = "navbar-nav">  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> First </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Second </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Third </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Fourth </a>  
+</li>  
+</ul>  
+</div>  
+</nav>  
+<div class = "container mt-2">  
+<p> A Web page's top navigation header is referred to as a navbar or navigation bar. </p>  
+</div>  
+</div><br>
+<div class = "container mt-2">  
+<h4> Colored Navbar Function </h4>  
+<nav class = "navbar bg-info navbar-expand-sm">  
+<ul class = "navbar-nav">  
+<li class = "nav-item">  
+<a class = "nav-link text-dark" href = "#"> First </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link text-dark" href = "#"> Second </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link text-dark" href = "#"> Third </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link text-dark" href = "#"> Fourth </a>  
+</li>  
+</ul>  
+<br>  
+</nav>  <br>
+<div class = "container mt-2">  
+<h4> Navbar Function With Logo </h4>  
+<nav class = "navbar bg-light navbar-expand-sm justify-content-center">  
+<div class = "container-fluid">  
+<a class = "navbar-brand" href = "C:\Users\ADMIN\Pictures\Screenshots\Screenshot 2024-03-08 190636.png">logo</a>  
+</div>  
+<ul class = "navbar-nav">  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> First </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link text-dark" href = "#"> Second </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link text-dark" href = "#"> Third </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link text-dark" href = "#"> Fourth </a>  
+</li>  
+</ul>  
+</nav>  
+</div>  <br>
+<div class = "container mt-2">  
+<h4> Navbar Function with Form </h4>  
+<nav class = "navbar bg-dark navbar-dark navbar-expand-sm">  
+<a class = "navbar-brand" href="#"> LOGO </a>  
+<ul class = "navbar-nav me-auto">  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> First </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Second </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Third </a>  
+</li>  
+</ul>  
+<form class="d-flex">  
+<input class="form-control me-4" type="text" placeholder="Search">  <!-- me => margin-end-->
+<button class="btn btn-success" type="button">Search</button>  
+</form>  
+</nav>  
+</div>  
+<br>
+<div class = "container mt-2">  
+<h4> Toggleable Navbar Function (3 menus )</h4>  
+<nav class = "navbar bg-success navbar-dark navbar-expand-sm">  
+<a class = "navbar-brand" href="#"> LOGO </a>  
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsible">  
+<span class="navbar-toggler-icon"></span>  
+</button>  
+<div class="collapse navbar-collapse" id="collapsible">  
+<ul class = "navbar-nav me-auto">  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> First </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Second </a>  
+</li>  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Third </a>  
+</li>  
+</ul>  
+</div>  
+</nav>  
+</div>  <br><br>
+<div class = "container-fluid mt-5"><br>  
+<h4> Navbar Function with Sticky Top Position </h4>  
+<p>  
+Use a "nav" element to ensure accessibility, or, if using a more general element like a "div," add the attribute role = "navigation". This role uses to each navbar to make it clear to users of assistive technologies such as a landmark area.   
+</p>  
+</div>  
+<nav class = "navbar bg-success navbar-dark navbar-expand-sm sticky-top">  
+<a class = "navbar-brand" href="#"> LOGO </a>  
+<ul class = "navbar-nav">  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Top </a>  
+</li>  
+</ul>  
+</nav> 
+ 
+<div class = "container-fluid mt-5"><br>  
+<h4> Navbar Function with Sticky Position </h4>  
+<p> By default, navbars are responsive, but you can simply change that with bootstrap 5 class. The responsive navigation bar function depends on our Collapse JavaScript plugin.   
+</p>  
+</div>  <br>
+
+<div class = "container mt-2">  
+<nav class = "navbar bg-success navbar-dark navbar-expand-sm fixed-top">  
+<a class = "navbar-brand" href="#"> LOGO </a>  
+<ul class = "navbar-nav">  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Top </a>  
+</li>  
+</ul>  
+</nav>  
+<nav class = "navbar bg-info navbar-light navbar-expand-sm fixed-bottom">  
+<a class = "navbar-brand" href="#"> LOGO </a>  
+<ul class = "navbar-nav">  
+<li class = "nav-item">  
+<a class = "nav-link" href = "#"> Bottom </a>  
+</li>  
+</ul>  
+</nav>  
+</div>  
+<div class = "container-fluid mt-5"><br>  
+<h4> Navbar Function with Fixed Position </h4>  
+</div>  <br><br>
+<h1> model functions</h1>
+<div class = "container" id = "alertcont" style = "width:50%;height:50%;">  
+<h4> Bootstrap 5 modal function </h4>  
+<p> Click on button to display popup modal function </p>  
+<button type = "button" class = "btn btn-info" data-bs-toggle = "modal" data-bs-target = "#popupModal">  
+Open modal function  
+</button>  
+</div>  
+<div class = "modal" id = "popupModal">  
+<div class = "modal-dialog">  
+<div class = "modal-content">  
+<p> To add dialogues to your website for lightboxes, user notifications, or unique content, utilize the JavaScript modal plugin for Bootstrap. </p>  
+</div>   
+</div>  
+</div>  <br>
+
+</body>  
+</html>  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Square Root of 17 is: <span id="p1"></span>    
+<script>    
+document.getElementById('p1').innerHTML=Math.sqrt(17);    
+</script>  
+<br> 
+<script>  
+document.writeln(Math.exp(1)+"<br>");  
+document.writeln(Math.exp(5)+"<br>");  
+document.writeln(Math.exp(-5));  
+</script><br>
+<script>  
+document.writeln(Math.abs(-4)+"<br>");  // returns negative value as positive
+document.writeln(Math.abs(-7.8)+"<br>");  
+document.writeln(Math.abs('-4')); 
+document.writeln(Math.abs(null)+"<br>");  
+document.writeln(Math.abs([])+"<br>");  
+document.writeln(Math.abs(''));   
+document.writeln(Math.abs("string")+"<br>");  
+document.writeln(Math.abs([2,3])+"<br>");  
+document.writeln(Math.abs());
+</script>
+<br><script>  
+function display()  
+{  
+  var x=document.getElementById("num").value;  
+  document.getElementById("result").innerHTML=Math.abs(x);  
+}  
+</script>  
+<form>  
+  Enter a number: <input type="text" id="num">  
+  <input type="button"  onclick="display()" value="submit">  
+  </form>  
+  <p><span id="result"></span></p>  
+  <script>  
+document.writeln(Math.ceil(7.2)+"<br>");  
+document.writeln(Math.ceil(0.2));  
+  
+document.writeln(Math.ceil(-7.2)+ "<br>");  
+document.writeln(Math.ceil(-0.2));  
+document.writeln(Math.floor(-7.2)+ "<br>");  
+document.writeln(Math.floor(-0.2));  
+document.writeln(Math.floor(7.2)+ "<br>");  
+document.writeln(Math.floor(0.2));
+</script>    
+</script>  
+</body>
+</html>

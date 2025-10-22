@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head> <tittle> JS-DATE() Object</tittle></head>
+<body>
+<h3> dateObj.getDate()  </h3>
+<script>
+var date=new Date();
+document.write(date.getDate()+"<br>");
+var date1=new Date("April,15,2020,20:24:12");
+document.write(date1.getDate()+"<br>"); // used to get date of current day like 0 to 31..
+document.writeln(date1.getDay()); // used to get the days in a week (sun)0to6
+document.writeln(date.getFullYear());  // used to get the year
+document.writeln(date1.getFullYear()+"<br>");
+var year1=new Date("December 31, 1947 20:22:10 GMT+11:00");
+var year2=new Date("April 31, 1947 20:22:10 GMT-11:00");
+document.writeln("Year value1 : "+year1.getUTCFullYear()+"<br>");
+document.writeln("Year value2 : "+year2.getUTCFullYear());
+document.writeln("Month Name: "+date1.getMonth()+"<br>"); // 0 to 11 jan to dec
+document.writeln(date1.getHours()); 
+document.writeln(date1.getMinutes()); 
+document.writeln(date1.getSeconds()+"<br>"); 
+ 
+var date2=new Date();  
+document.writeln(date2.getMonth()+1+"<br>");  
+
+var d = new Date("July 21, 1983 01:15:00");
+document.write("current date:"+d.getDate()+"<br>");
+d.setDate(24);
+document.write("modified date:"+d.getDate()+"<br>");
+d.setHours(02);
+document.write("changed hours:"+d.getHours()+"<br>");
+ 
+var date=new Date();  
+document.writeln(date.toDateString());  
+ 
+</script>
+</script>
+</body>
+</html>

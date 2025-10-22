@@ -1,0 +1,58 @@
+<!Doctype html>
+<html>
+<body>
+<h2>class declaration</h2>
+<script>
+class Employee{
+/*empname="gokul"; // field
+emp(id,name){
+//var empname="ashok";
+console.log(this.empname); // this refers to current object
+}*/
+constructor(id,name){//"constructor" is keyword
+this.id1=id;
+this.name1=name;
+}
+emp3(){
+document.writeln(this.id1+" "+this.name1);
+}
+}
+
+/*var emp1=new Employee();
+console.log(emp1.empname);
+emp1.emp();*/
+var object=new Employee(102,"king");
+object.emp3();
+
+</script>
+<h3> class expression( class is named or unnamed)</h3>
+<h5>Unnamed Class Expression</h5>
+<script>  
+var emp = class {  
+  constructor(id, name) {  
+    this.id = id;  
+    this.name = name;  
+  }  
+};  
+document.writeln(emp.name);  
+</script>  
+<br>
+<h4> Named class Expresson</h4>
+<p> the scope of the class name is up to the class body. The class is retrieved using class.name property.</p>
+<script>
+var emp = class Employee { // here 'emp' is act as class name...
+  constructor(id, name) {
+    this.id = id;
+    this.name = name;
+  }
+};
+var obj=new emp(100,"gokul");
+document.writeln(obj.id);
+document.writeln(obj.name);
+/*document.writeln(Employee.name);
+Error occurs on console:
+"ReferenceError: Employee is not defined
+*/
+</script>
+</body>
+</html>

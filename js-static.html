@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--<script>
+class Test
+{
+  static display()
+  {
+    return "static method is invoked"
+  }
+}
+document.writeln(Test.display());
+</script>-->
+
+<!--<h1> More than onestatic method()</h1>
+<script>
+class Test
+{
+  static display1()
+  {
+    return "static method is invoked"
+  }
+  static display2()
+  {
+    return "static method is invoked again"
+  }
+}
+document.writeln(Test.display1()+"<br>");
+document.writeln(Test.display2());
+</script>-->
+<!--<h1>to invoke more than one static method with similar names.</h1>
+<script>
+class Test  
+{  
+  static display()  
+  {  
+    return "static method is invoked"  
+  }  
+  static display()  
+  {  
+    return "static method is invoked again"  
+  }  
+}  
+document.writeln(Test.display());  
+</script>  -->
+<!--<h2> to invoke a static method within the constructor.</h2>
+<script>  
+class Test {  
+  constructor() {  
+  document.writeln(Test.display()+"<br>"); // calling static method  by using class name.  
+  document.writeln(this.constructor.display());   // object will create field name 'constructor' auomatically. here calling static methid as per prperty of an constructor.
+  }  
+  
+  static display() {  
+      return "static method is invoked"  
+  }  
+}  
+var t=new Test();  -->
+<h2> invoke static method within non - static method</h2>
+<script>
+class Test1{
+static display(){
+ var a=10;
+var b=20;
+var c=a+b;
+return c;}
+display(){
+document.write(Test1.display());
+}
+}
+var t=new Test1();
+t.display();
+</script>
+</script> 
+</body>
+</html>

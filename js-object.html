@@ -1,0 +1,50 @@
+<html>
+<body>
+<h1> By creating object literal</h1> 
+<script>
+
+emp={id:102,name:"Shyam Kumar",salary:40000}; // object={proprty1:value1,property2:value2,.....};
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+</script>
+<h1> By ceating instance of object directly(using new Key word)</h1>
+<script>  
+var emp=new Object();  
+emp.id=101;  
+emp.name="Ravi Malik";  
+emp.salary=50000;  
+document.write(emp.id+"<br/>"+emp.name+"<br/>"+emp.salary);  
+</script>
+<h1> By ceating object using new constructor</h1>
+<p> constructor is used in class. what are the values given in class that is accessed by using constructor function </p>
+<script>  
+function emp(id,name,salary){  
+this.ids=id;  // this.ids is property , so after this we can give any name) this refers to current object. for ex: who is accessing the function that person is called current object.
+this.name=name;  
+this.salary=salary;  
+}  
+e=new emp(103,"Vimal Jaiswal",30000);  
+emplo=new emp( 104,"Gokul",10000);   // This values given to arguments . 
+document.write(emplo.ids+" "+emplo.name+" "+emplo.salary);  
+document.write(e.ids+" "+e.name+" "+e.salary);  
+
+</script>  
+
+<h2>using methods in javascript</h2>
+<script>  
+function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+  
+this.change=changeSalar;  
+function changeSalar(otherSalary){  
+this.salary1=otherSalary;  
+}  
+}  
+e=new emp(103,"Sonoo Jaiswal",30000);  
+document.write(e.id+" "+e.name+" "+e.salary);  
+e.change(45000);  
+document.write("<br>"+e.id+" "+e.name+" "+e.salary1);  
+</script>  
+</body>
+</html>

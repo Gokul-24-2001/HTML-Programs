@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+<head>
+JS OBJECT.KEYS()</HEAD>
+<body><br>
+<script>
+var obj1={a:'raj',
+b:54,
+c:10000,};
+console.log(Object.keys(obj1)); // It returns the property names in the form of array , which has given in objects..
+</script>
+<h3> Object.is()</h3>
+<p> it checks the value bot are same or not.. If same return 'TRUE'  OR NOT SAME  RETURN AS 'FALSE'</P>
+<p> Object.isSealed() before sealing an object .. Return o/p as 'FALSE', AFter seals an object.. return o/p"TRUE"..</p>
+<script>
+var obj1={};
+console.log(Object.is(obj1,{}));
+console.log(Object.is(1,'2')); // Both are different so 'FALSE'
+console.log(Object.is(1,1));  // both value is same so TRUE
+var obj2={id:25,age:24,};
+console.log(Object.isSealed(obj2));
+Object.seal(obj2);
+console.log(Object.isSealed(obj2));   // true
+// SEAL()
+var d={id:30,name:'gokul',};   // thisvalue us sealed, can't do anything modification
+Object.seal(d);  
+d.id=35;   
+console.log(d.id);   // after seal whatever giving it will give that otput.
+// is Extensible..
+const object = {};
+
+console.log(Object.isExtensible(object));
+// Expected output: true
+
+Object.preventExtensions(object);
+
+console.log(Object.isExtensible(object));
+// Expected output: false
+</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!Doctype html>
+<html>
+<head>
+<TITTLE> ARRAY</tittle>
+<style>
+h1{color:green;}
+h2{color:red;}
+</style>
+</head>
+<body>
+<h1> By array literal</h1>
+<script>
+var arr=[1,2,3,4,5,"RAM",78];
+
+for(i=0;i<arr.length;i++)  // elements of array is itrated until the condition becomes false
+{
+var result=arr[i]+"<br/>";  // local variable declared 'result'
+document.write(result);
+}
+</script>
+<br>
+<h2> Instance of array creating directly using "NEW"keyword</h2>
+<script>
+var i;
+var arr1= new Array();
+arr1[0]="Arun";
+arr1[1]="Goul";
+arr1[2]="ashok";
+arr1[3]="ram";
+arr1[4]="raj";
+for(i=0;i<arr1.length;i++)
+{
+document.write(arr1[i]+"<br>");
+}
+
+</script>
+<h2> Constructor array</h2>
+<script>
+var arr1= new Array(1,24,45,46,47);
+for(i=0;i<arr1.length;i++)
+{
+document.write(arr1[i]+"<br>");
+}
+</script>
+<h1> Methods of Array</h1>
+<hr><br>
+<h2> array.concat()</h2>
+<p> canact means it returns new array by combining two or more merged arrays.</p>
+<b>array.concat(arr1,arr2,....,arrn)  </b><br>
+<script>
+var arr1=[2,3,45,56,57,38];
+var arr2=["sony","amazon","flipkart"];
+var arr3=["Ruby","Kotlin"]; 
+var result=arr1.concat(arr2,arr3);
+ var result1= arr1.concat("Java","JavaScript","Android");
+document.write(result,result1);
+</script>
+<h2>array.copywithin()</h2>
+<b>array.copyWithin(target, start, end)</b>  
+<script>
+
+var arr=["AngularJS","Node.js","JQuery","Bootstrap"]  
+// place at 0th position, the element between 1st and 2nd position.  
+var result=arr.copyWithin(0,1,2);  
+document.writeln(result);  
+
+</script><br><br>
+<script>  
+var arr=["AngularJS","Node.js","JQuery","Bootstrap","html","pytho"]  
+// place from 0th position, the elements between 1st and 3rd position.  
+var result=arr.copyWithin(1,3);  
+document.writeln(result);  
+</script>  
+<h2>array.entries</h2>
+<p> used calculate length of an array(how many entries are there that is counted)</p>
+<script>
+var arr4=[11,21,14,51,62]; // decalre array
+var itm=arr4.entries();   // length of array stored in arr.entries function or method..i.e here it stores only array values likegokul.siva,sahil,, Doesn't hold the index value ..
+for(var a of itm){//for loop using var
+document.write(a+"<br>");}
+</script><br>
+
+<h12> array every()</h2>
+<script>  
+var marks=[50,40,45,37,20];  
+  
+function check(value)  
+{  
+  return value>30;  //return false, as marks[4]=20  
+}  
+  
+document.writeln(marks.every(check));  
+</script>  <br>
+<h2>array.slice(start,end)  <h2>
+
+<script>  
+var arr=["AngularJS","Node.js","JQuery","Bootstrap"]  
+var result=arr.slice(1,3);  // start from index1 to end at index-1(ex.. ending at 3 means , values return upto index2)
+document.writeln(result);  
+</script>
+<h2> array.values()</h2>
+
+<script>
+var arr = ["John","Mary","Tom","Harry","Shee"]; //Intializing array elements
+var itr = arr.values(); //Using values() method.
+document.write("The array elements are:<br>");
+for (var x of itr) { 
+	document.write("<br>"+x[0]);
+		document.write("<br>"+x);
+
+}  //This iterates the array elements through its index value. it iterates each and every letters with its index value..
+</script>
+<h2> array.shift()</h2>
+
+<p> It removes first element and return that element</p>
+<script>
+
+var arr = ["John","Mary","Tom","Harry","Shee"];
+var result=arr.shift();  
+document.writeln(result); 
+</script>
+<h1> array.splice(start,end,elementent 1,12,... which we wants to add)</h1>
+<script>  
+var arr=["Monday","Tuesday","Saturday","Sunday","Thursday","Friday"];  
+var result=arr.splice(2,0,"wed");  // To add element give '0'.. If we give apart from 0 ,, it removes element..
+document.writeln("Updated array: "+arr+"<br>");  
+document.writeln("Removed element: "+result);  
+</script>  <br>
+<h2> array.unshift()</h2>
+<p> The JavaScript array unshift() method adds one or more elements in the beginning of the given array and returns the updated array. This method changes the length of the original array</p>
+<script>  
+var arr=["AngularJS","Node.js"];  
+document.writeln("Length before invoking unshift(): "+arr.length+"<br>");  
+arr.unshift("JQuery","Bootstrap");  
+document.writeln("Length after invoking unshift(): "+arr.length+"<br>");   
+document.writeln("Updated array: "+arr);  
+</script>  
+<br>
+<h3> array.toSting()</h3>
+<p> It converts array elements into string format , which contains array elemnets</p>
+<script>  
+       var season=["Spring","Autumn","Summer","Winter"];  
+                          var str=season.toString(); //toString() method implementation  
+                          document.write("After converting into string:  "+str);  
+                  </script>  
+<h2> indexof()< specefies element position></h2>
+<script>
+var arr=["C","C++","Python","C++","Java"];
+var result= arr.indexOf("Python");
+document.writeln(result);
+</script>
+<h2> pop() removing </h2>
+<script>
+var arr=["AngularJS","Node.js","JQuery"];
+document.writeln("Orginal array: "+arr+"<br>");
+document.writeln("Extracted element: "+arr.pop()+"<br>");
+document.writeln("Remaining elements: "+ arr);
+</script>
+<h2> psuh() adding elemnets</h2>
+<script>  
+var arr=["AngularJS","Node.js"];  
+arr.push("JQuery");  
+document.writeln(arr);  
+</script>
+<h2>arr.reverse();  </h2>
+<script>  
+var arr=["AngulaJS","Node.js","JQuery"];  
+var rev=arr.reverse();  
+document.writeln(rev);  
+</script>  
+<h2> array.join(separator)  </h2>
+<script>  
+var arr=["AngularJs","Node.js","JQuery"]  
+var result=arr.join('*')  // here we can use separater for seaperate valuesin arary
+document.write(result);  
+</script><br>
+<script>  
+var arr=new Array(1,2,34,4,5,6);  
+document.write(Array.isArray(arr)); //It will return true.  
+</script>  
+
+
+</body>
+</html>

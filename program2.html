@@ -1,0 +1,235 @@
+<!Doctype html>
+<html>
+<head>
+<tittle> <h1><b>Javascript Programming</b></h1></tiitle>
+</head>
+<body>
+<!--<h4>Finding Random values  between two numbers</h4>
+<p>Math.Random()*(highest_value-lowest_value)+lowest_value.. always random value is genreated between 0 to 1 .</p>
+<script>
+var a=parseInt(prompt("Enter the first value"));
+var b=parseInt(prompt("enter the second value"));
+var result=Math.random()*(a-b)+b;
+var result1=Math.floor(result)+b;// Math.floor() is used to get as integer value of random value
+document.write(result);
+console.log(result1);
+
+</script>
+<h4>Finding the given number is positive,negative or zero(using if..else if...else)</h4>
+<script>
+var num=parseInt(prompt("enter thenumber"));
+if (num > 0) {
+var sum=2;
+sum=sum+num;
+console.log(sum);
+}
+else if (num == 0) {
+console.log(`The given number ${num} is Zero`);
+}
+else {
+
+console.log(`Enter number ${num} is negative`);
+}
+</script>
+<h3> Nested IF else</h4>
+<script>
+var num=parseInt(prompt("enter thenumber"));
+ if (num > 0){
+ if(num==0){
+ console.log("Zero");
+ }
+ else{
+ console.log("positive number");
+ }
+ 
+ }
+ else {
+ console.log("negative number");
+ }
+ </script>
+ <h3> Finding odd or even number</h3>
+ <script>
+ const num=prompt("Enter the number");
+ /*if(num%2==0)
+ {
+ console.log("Even");
+ }
+ else
+ { console.log("odd")};*/
+ // Ternary operator
+ const result=(num%2==0)?"even":"odd";
+ console.log(result);
+ 
+
+ </script>
+ 
+ <h3> Find the given value is integer or floating value.</h3>
+
+ 
+ <script>
+ 
+
+function number(n) {
+if(typeof n == 'number'&& !isNaN(n))
+{
+if(Number.isInteger(n))
+{console.log(`Th e given number is${n} Intger`);
+}
+
+else
+{
+console.log("Float value");
+}
+}
+else
+{ console.log("It is string ");
+}
+}
+number(41.5);
+</script>
+<h3> Find largest number among three numbers</h3>
+<script>
+let num1=parseFloat(prompt("enter first number"));
+let num2=parseFloat(prompt("enter first number"));
+let num3=parseFloat(prompt("enter first number"));
+//let sum=5;
+/*if(num1>num2&&num1>num3)
+{
+ sum+=num1;
+ document.write(sum);
+ }
+ else if(num2>num1&&num2>num3)
+ {
+  document.write(num2);
+}
+else
+{document.write(num3);
+}*/
+ var res=Math.max(num1,num2,num3);
+ 
+  document.write(res);
+
+</script>
+<h5> Find LCM</h5>
+<script>
+const n1=prompt("enter first number");
+const n2=prompt("enter second number");
+
+let min=(n1>n2)?n1:n2;
+//var lcm;
+while(true)
+{
+if(min%n1==0&&min%n2==0)
+{
+document.write(min);
+break;
+}
+min++;
+}
+
+
+</script>
+<h2>find the prime number</h2>
+<script>
+const num=prompt("enter your number");
+let isprime=true;
+if(num==1){
+console.log(`${num} is either prime or complex number`);
+}
+for (var i=2;i<num;i++)
+{
+if(num%i==0)
+{
+console.log("Not prime number");
+isprime=false;
+}
+}
+if(isprime==true){
+console.log(`${num} is prime number`);
+}
+
+
+</script>
+<h2> find the prime in interval</h2>
+<script>
+ const num1=parseInt(prompt('enter the first value'));
+const num2=parseInt(prompt('enter the second value'));
+/*for( let i=num1;i<=num2;i++)
+{
+let flag=0;
+for(let j=2;j<i;j++){
+if(i%j==0){
+flag=1;
+break;
+}}
+if(i>1&&flag==0){
+console.log(i);
+}
+}
+*/
+var i=num1;
+while(num1<=num2)
+{
+console.log(num1);
+num1++;
+
+}
+</script>
+<h2> find factorial number </h2>
+
+<P> 0!=1,1!=1*1=1,,2!=1*2=2,3!=1*2*3=6,5!=1*2*3*4*5=70</p>
+<script>
+var n=prompt("enter number");
+
+if(n==0)
+{
+console.log(1);
+}
+else{
+let fact=1;
+for(let i=1;i<=n;i++){
+fact=fact*i;
+}
+console.log(`The factorial${n} is ${fact}`);
+}
+
+</script>-->
+
+
+
+<nav id ="navbar">
+  <header id = "title">choose</header>
+  <a class = "nav-link" href ="#projects"> Projects </a>
+  <a class = "nav-link" href="#fotos"> fotos </a>
+  <a class = "nav-link" href="#el_santo"> el santo </a>
+</nav>
+
+<main id = "maindoc">
+  
+  <section id = "welcome-section">
+    <h1> My Portfolio </h1>
+  </section>
+  
+  <section id = "projects">
+    <p class = "project-tile"></p>
+    <a href = "https://codepen.io/elote23/pen/gOorvOR"> Project 1 </a>
+  </section>
+  
+  <section id = "fotos">
+    <p class = "project-tile"></p>
+    <a href = "https://codepen.io/elote23/pen/WNdNoWZ"> Fotos </a>
+  </section>
+  
+  <section id = "el_santo">
+    <p class = "project-tile"></p>
+    <a href = "https://codepen.io/elote23/pen/zYpOdZw"> El Santo </a>
+  </section>
+
+  
+  <a id = "profile-link" href = "https://www.freecodecamp.org/fcc0ddb018c-6694-4291-8aef-f28519df767e" target = "_blank"> FCC </a>
+  
+</main>
+
+
+</body>
+</html>

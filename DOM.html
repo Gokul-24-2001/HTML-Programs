@@ -1,0 +1,71 @@
+<!Doctype html>
+<html>
+<h1> Document object Model(DOM)</h1>
+<body>
+<p> When html document is loaded in the browser, it becomes a document object. It is the root element that represents the html document.</p>
+<script type="text/javascript">  
+/*function printvalue(){  
+var name=document.form1.name.value;  
+alert("Welcome: "+name);  
+}  */
+function getelementbyid(){
+var a =document.getElementById("number").value;
+alert(a*a*a);
+}
+function totalelements()  
+{  
+var allgenders=document.getElementsByName("gender");  // we are going to count the name of gender.(how many genders present here)
+alert("Total Genders:"+allgenders.length);  
+}  
+function countpara(){  
+var totalpara=document.getElementsByTagName("p");  
+alert("total p tags are: "+totalpara.length);  
+  
+}  
+
+function counth2(){  
+var totalh2=document.getElementsByTagName("h2");  
+alert("total h2 tags are: "+totalh2.length);  
+}  
+function counth3(){  
+var totalh3=document.getElementsByTagName("h3");  
+alert("total h3 tags are: "+totalh3.length);  
+} 
+
+function showcommentform() {  
+var data="Name:<input type='text' name='name'><br>Comment:<br><textarea rows='5' cols='80'></textarea>  
+<br><input type='submit' value='Post Comment'>";  
+document.getElementById('mylocation').innerHTML=data;  
+}  
+</script>  
+  
+<form name="form1">  
+Enter Name:<input type="text" name="name"/>  
+<input type="button" onclick="printvalue()" value="print name"/>  
+Enter NO:<input type="text" id="number" name="number"/>
+<input type="button" onclick="getelementbyid()" value="print number"/>  
+<br>
+Male:<input type="radio" name="gender" value="male">  
+Female:<input type="radio" name="gender" value="female">  
+  
+<input type="button" onclick="totalelements()" value="Total Genders">  
+<br>
+<!--<h1> count the number of elements which is given in tagname</h1>-->
+<p>This is a pragraph</p>  
+<p>Here we are going to count total number of paragraphs by getElementByTagName() method.</p>  
+<p>Let's see the simple example</p>  
+<button onclick="countpara()">count paragraph</button>
+<br>
+<br>
+<h2>This is h2 tag</h2>  
+<h2>This is h2 tag</h2>  
+<h3>This is h3 tag</h3>  
+<h3>This is h3 tag</h3>  
+<h3>This is h3 tag</h3>  
+<button onclick="counth2()">count h2</button>  
+<button onclick="counth3()">count h3</button>  <br>
+<input type="button" value="comment" onclick="showcommentform()">  
+<div id="mylocation"></div>  
+</form>  
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p> poly-many,phism-forms..Many forms</p>
+<script>
+class A
+  {
+     display()
+    {
+      document.writeln("A is invoked");
+    }
+  }
+class B extends A
+  {
+  /*display(){
+ document.writeln("B is invoked");
+  }*/
+  }
+var b=new B();
+b.display();// deceides at runtime which method needs to call..invoke
+b.display();
+</script>
+
+</body>
+</html>

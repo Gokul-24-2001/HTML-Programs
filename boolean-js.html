@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<tittle> Boolean</tittle>
+</head>
+<body>
+<h5> Boolean values TRUE OR FALSE<h5>
+<p>Display the value of Boolean(10 > 9):</p>
+<p id="demo"> </p>
+<script>
+//var x=10;
+document.getElementById("demo").innerHTML=Boolean(10<4);
+var a=0;
+document.write(Boolean(a)+"<br>"+Boolean("hello")); // zero,empty backet(""),-0,(),
+</script>
+<h3> Number object</h3>
+<p> var num=new Number(value)</p>
+<script>
+var x=102;//integer value  
+var y=102.7;//floating point value  
+var z=13e4;//exponent value, output: 130000  
+var n=new Number(16);//integer value by number object  
+var n1=new Number("frse");// it checks whether it is number or not
+document.write(x+" "+y+" "+z+" "+n+" "+n1);
+</script>
+<h4>isFinite()</h4>
+<p> syntax:Number.isFinite(num)</p>
+<script>  
+var x=0;  
+var y=1;  
+var z=-1; 
+function check(a,b){
+return a/b;
+}
+var c="real"; 
+document.writeln(Number.isFinite(x));  //if interger comes returns true, otherwise return false
+document.writeln(Number.isFinite(y));  
+document.writeln(Number.isFinite(z));   
+document.writeln(Number.isFinite(c));   
+document.writeln(Number.isFinite(check(0,20)));
+document.writeln(Number.isFinite(check(10,20)));
+document.writeln(Number.isFinite(check(10,0)));  // infinity,-infinity,NaN  returns false.
+
+</script>  
+<H5> Number.isInteger(n)</h5>
+<p> returns true if it is interger value.. returns false if it is foating value and string(6.8,sdfg)</p>
+<script>
+var n=20;
+var r="18";
+var e=2.6;
+document.write(Number.isInteger(n)+"<br>");
+document.write(Number.isInteger(r)+"<br>"); // string returns false
+document.write(Number.isInteger(e)+"<br>");
+document.write(Number.isInteger(-5.6));
+
+</script>
+<h5> Number.parseFloat(string)</h5>
+<p>The JavaScript number parseFloat() method parses a string argument and converts it into a floating point number. It returns NaN, if the first character of given value cannot be converted to a number.</p>
+<script>  
+var a="50";  
+var b="50.25"  
+var c="String";  
+var d="50String";  
+var e="50.25String"  
+var c=a+b;
+var d=Number.parseFloat(a)+Number.parseFloat(b);
+document.writeln(Number.parseFloat(a)+"<br>");  
+document.writeln(Number.parseFloat(b)+"<br>");  
+document.writeln(Number.parseFloat(c)+"<br>");  
+document.writeln(Number.parseFloat(d)+"<br>");  
+document.writeln(Number.parseFloat(e));   
+document.writeln(Number.parseFloat(c));
+document.writeln(Number.parseFloat(d));
+
+</script>  
+<h5> Number.parseInt(string,radix)</h5>
+<script>  
+var a="50";  
+var b="50.25"  
+var c="String";  
+var d="50String";  
+var e="50.25String"  
+document.writeln(Number.parseInt(a)+"<br>");  // returns only interger value. it won't consider after decimal value
+document.writeln(Number.parseInt(b)+"<br>");  // returns only interger value. it won't consider after decimal value
+document.writeln(Number.parseInt(c)+"<br>");  
+document.writeln(Number.parseInt(d)+"<br>");  
+document.writeln(Number.parseInt(e)+"<br>"+"<br>");   
+var a="50";
+document.writeln(Number.parseInt(a,10)+"<br>");
+document.writeln(Number.parseInt(a,8)+"<br>");
+document.writeln(Number.parseInt(a,16));
+</script>
+<h4>Number. toExponential(num)  </h4>
+
+<script>  
+var a=989721678;  
+document.writeln(a.toExponential()+"<br>");  
+document.writeln(a.toExponential(3));  // pass integer value, why because after decimal point how many digits want to be [placed]
+
+</script>  
+<h3> Number.toFixed(n)</h3>
+<script>
+var b=68.2345;
+var c=68.5345;
+document.writeln(b.toFixed()); 
+document.writeln(c.toFixed()); 
+document.writeln(c.toFixed(3)); 
+</script>
+<h4>Number.toPrecision(digits)  </h4>
+<script>
+var b=68.2345;
+var c=68.5345;
+document.writeln(b.toFixed()); 
+document.writeln(c.toFixed()); 
+document.writeln(c.toFixed(3)); 
+</script>
+<h3>Number.toString(radix)</h3>
+<p> converts digits or numbers into string</p>
+<script>
+var a=50;
+var b=30;
+var c=a+b;// 50+30=80
+document.writeln("Before invoking toString(): "+c+"<br>");
+var c=a.toString()+b.toString();// 5030 ,, here converting numbers into string
+document.writeln("After invoking toString(): "+c+"<br>"); // 5030
+var a=12;  
+document.writeln(a.toString(2)+"<br>");  
+document.writeln(a.toString(8)+"<br>");  
+document.writeln(a.toString(16));  
+
+</script>
+</BODY)
+
+</HTML>

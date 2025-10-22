@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1> IFRAME</h1>
+</head>
+<body>
+<h2> Iframe with example</h2>
+<p> using height and width attribute we can adjust the size of the another webpage with in the current HTML document</p>
+<iframe src="https://www.javatpoint.com/oprweb/test.jsp?filename=htmliframes" height="500" width="700"
+</iframe>
+
+
+
+</body>
+
+
+</html>

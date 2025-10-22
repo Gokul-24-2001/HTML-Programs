@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<h2> Encapsulatipn(binding the data(variables) or hiding the data</h2>
+</head>
+<body>
+<!--<script>  
+class Student  
+  {  
+    constructor()  
+    {  
+       var name1;  
+       var marks;  
+    }  
+        getName()  // used to get  values
+        {  
+          return this.name;  
+        }  
+      setName(name1)  
+      {  
+        this.name=name1;  
+      }  
+        
+      getMarks()  
+      {  
+        return this.marks;  
+      }  
+    setMarks(marks)  
+    {  
+      this.marks=marks;  
+    }  
+  
+    }  
+    var stud=new Student();  
+     stud.setName("John");  
+     stud.setMarks(80);  
+     document.writeln(stud.getName()+" "+stud.getMarks());  
+</script>-->  
+<h2> validate</h2>
+<script>
+class Worker{
+constructor()
+{
+var id;
+var name;
+var salary;
+//var expense;
+}
+setName(name)//setter must have one parameter.
+{
+this.name2=name;
+}
+getName(){
+return this.name2;
+}
+setId(id){
+this.id1=id;
+}
+getId(){
+return this.id1;
+}
+setSalary(salary){
+//this.salary1=salary;
+if(salary>1000)
+{
+alert("GoodJob");
+}
+else
+{
+  this.salary=salary;
+}
+}
+getSalary(){
+return this.salary;
+}
+}
+var w=new Worker();
+w.setId(101);
+w.setName("ram");
+w.setSalary(200);
+document.write(w.getId()+" "+
+w.getName()+w.getSalary());
+
+
+</script>
+</body>
+</html>

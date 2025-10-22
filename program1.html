@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<HTML>
+<Head>
+<TITTLE>
+1. Print 'Hello World'
+</TITTLE>
+</Head>
+
+<body>
+<br>
+<!--<script>
+console.log('HelloWorld');
+alert("Hello, World!");
+//document.write('Hello,World');
+</script>
+<h3> Add TWO numbers</h3>
+<script>
+var a=10;
+var j=a+=40; // g=a+30,g=10=30=40 // changing value for var a  value to new value .. how? like this  b=a+=10.. format
+var b=15;
+var e=5;
+var c=a+b; // 40+15
+var d=c-e;
+var f=c*d;
+
+var divi=c/e; // It gives quotient value..
+var remin=c%e;  // it gives reminder value.
+document.writeln(c+" "+d+" "+divi+" "+remin);
+console.log(d,f);
+</script>
+<h3> How to get values from USERS</h3>
+<script>
+ var num1=parseInt(prompt('Enter first number'));
+  var num2=parseInt(prompt('Enter second number'));
+  var sum=num1+num2;
+  //document.write(sum);
+  console.log(`The sum of ${num1} and ${num2} is ${sum}`); //To display the result, we have used the template literal ` `. This allows us to include variables inside strings. To include variables inside ``, you need to use the ${variable} format.
+</script>
+<h3> Find Square Root Number</h3>
+<script>
+//var num=parseInt(prompt('Enter a number'));
+var num1="-2"; // negativeand string values are not suitable in square root.. only 0 to n value is acceptable.
+var result=Math.sqrt(num1);
+document.writeln(result);
+
+</script>
+<h3>Finding the maximum values among more than one value.</h3>
+<script>
+var a=10;
+var c=20;
+var d=30;
+
+var result=Math.max(a,c,d);
+var result1=Math.min(a,c,d);
+document.write(result+"<br>");
+document.write(result1);
+
+</script>
+
+<h3> Find the area of triangle</h3>
+<p> area=b*h/2 </p>
+<script>
+var b=10;
+var h=20;
+var area=b*h/2;
+console.log(area);
+var sq=Math.sqrt(area);
+console.log(sq);
+
+</script>
+<h3> swapping of two variables</h3>
+<script>
+var num1=10;
+var num2=20;
+var temp;
+temp=num2;
+num2=num1;
+num1=temp;
+document.write('After swapping:'+num1+" "+num2);
+// destructuring Assignment method
+var a=6;
+var b=10;
+var c=15;
+[a,b,c]=[c,a,b];
+console.log(a,b,c);
+// using arithmetic operators
+var a=50;
+var b=10;
+a=a+b; //60
+b=a-b;//60-10=50
+
+a=a-b; //60-50=10
+
+console.log(a,b);
+//Using Bitwise XOR operator
+var a=prompt('enter first number');
+var b=prompt('enter second number');
+a=a^b;
+b=a^b;
+a=a^b;
+console.log(a,b);
+</script>-->
+<h2> convert celsius to farenhit</h2>
+<script>
+var celsius=prompt("Enter the celsius value")
+var Farenhit=celsius*1.8+32;
+document.write(Farenhit);
+</script>
+</body>
+</html>

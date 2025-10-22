@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+body{background-color:#F1EAF3;}
+.form1{width:300px;
+height:300px;
+background-color:#FFFFFF;
+margin-left:450px;
+margin-top:70px;
+border-radius:.2cm;}
+</style>
+<script>
+function msg(){
+alert(" Hello, Your Login is successful");}
+</script>
+<body>
+<form class="form1">
+<h1 style="text-align:center;"> Login</h1>
+<hr><br>
+<div style="text-align:center;"><label style="font-family:cursive;"> Username</label><br>
+<input style="height:25px;border-radius:.4cm;" type="text" name="username" placeholder=" Enter username"/><br><br>
+<label style="font-family:cursive;"> password:</label><br>
+
+<input style="height:25px;border-radius:.4cm;"type="password" name="password" placeholder=" Enter password"/>
+<br>
+<br/>
+<input type="checkbox" name="password reminder" value="Remember me" <p>Remember me</p>
+<div class="button"><input style="background-color:blue;
+color:white;border-radius:.5cm; width:100px;"
+type="submit" id="login" onclick="msg()" value="login"/></div>
+
+</form></div>
+
+</body>
+</html>

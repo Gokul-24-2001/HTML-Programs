@@ -1,0 +1,54 @@
+<!Doctype HTML>
+<HTML>
+<BODY>
+<h1> Inheritance</h1>
+<p> IS-A relation ship</p>
+
+<!--<script>
+class M extends Date{
+constructor(sno,sal){
+super();
+this.salary=sal;
+this.sno1=sno;
+}
+}
+var ob=new M(1,100);
+
+document.write(ob.getMonth()+"<br>");
+document.write(ob.salary+" "+ob.sno1);
+</script>
+<!--<script>
+class Cycle{
+constructor(){
+this.model=1999;
+this.name="heroic";
+}
+}
+class Van extends Cycle{
+constructor(vno,seats){
+super(); // alaways give first.. do not give middle or end [super] keyword
+this.vno=vno;
+this.seats=seats;
+}
+}
+
+var obj=new Van(20,10,1998);
+//var obj1=new Cycle(1998,"heroic");
+//document.write(obj1.model+obj1.name);
+document.write(obj.vno+" "+obj.seats+" "+obj.model+" "+obj.name);
+
+
+
+</script>-->
+<script>
+class Moment extends Date {
+  constructor(month) {
+    super(month);
+  }}
+var m=new Moment("August 15, 1947 20:22:10");
+document.writeln("Year value:")
+document.writeln(m.getMonth());
+</script>
+
+</BODY>
+</HTML>

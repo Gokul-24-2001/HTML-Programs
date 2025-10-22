@@ -1,0 +1,288 @@
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title >Bootstrap Popover Example </title>  
+<meta charset = "utf-8">  
+<meta name = "viewport" content="width=device-width, initial-scale=1">  
+<link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel = "stylesheet">  
+<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>  
+</head>  
+<body>  
+<div class = "container mt-2">  
+<h5> Bootstrap 5 Popover with Anchor Tag </h5>  
+<a href = "#" type = "button" data-bs-toggle = "popover" title = "Thank You!" data-content = "Content">  
+Click Here!  
+</a>  
+</div>  
+<script>  
+var popoverList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "popover"]'))  
+var popoverList2 = popoverList1.map(function (popoverTriggerfun) {  
+return new bootstrap.Popover(popoverTriggerfun)  
+})  
+</script>  
+<br>
+<div class = "container mt-2">  
+<h5> Bootstrap 5 Popover with Button </h5>    
+<button href = "#" class = "btn btn-info" type = "button" data-bs-toggle = "popover" title = "Thank You!" >  
+Click Here!  
+</button>  
+</div>  
+<script>  
+var popoverList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "popover"]'))  
+var popoverList2 = popoverList1.map(function (popoverTriggerfun) {  
+return new bootstrap.Popover(popoverTriggerfun)  
+})  
+</script>  <br>
+<div class = "container mt-2">  
+<h5> Bootstrap 5 Popover with Button </h5>  
+<a href = "#" type = "button" data-bs-toggle = "popover" data-bs-placement = "top" title = "Thank You!" data-content = "Content">  
+Click Here!  
+</a> <br>  
+<a href = "#" type = "button" data-bs-toggle = "popover" data-bs-placement = "bottom" title = "Thank You!" data-content = "Content">  
+Click Here!  
+</a> <br>  
+<a href = "#" type = "button" data-bs-toggle = "popover" data-bs-placement = "left" title = "Thank You!" data-content = "Content">  
+Click Here!  
+</a> <br>  
+<a href = "#" type = "button" data-bs-toggle = "popover" data-bs-placement = "right" title = "Thank You!" data-content = "Content">  
+Click Here!  
+</a> <br>  
+</div>  
+<script>  
+var popoverList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "popover"]'))  
+var popoverList2 = popoverList1.map(function (popoverTriggerfun) {  
+return new bootstrap.Popover(popoverTriggerfun)  
+})  
+</script>  <br>
+<div class = "container mt-2">  
+<h5> Bootstrap 5 Popover with Hover Function</h5>  
+<a href = "#" type = "button" data-bs-toggle = "popover" title = "Thank You!" data-content = "Content" data-bs-trigger = "hover" data-bs-content = "Popover function works similar to tooltip function" style="margin-left:100px;">  
+Click Here!  
+</a>  
+</div>  
+<script>  
+var popoverList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "popover"]'))  
+var popoverList2 = popoverList1.map(function (popoverTriggerfun) {  
+return new bootstrap.Popover(popoverTriggerfun)  
+})  
+</script>  <br>
+  
+<br>
+<div class = "container mt-2">  
+<h5> Bootstrap 5 Popover with Disabled Button </h5>  
+<span class="d-inline-block" tabindex="0" data-bs-trigger = "hover" data-bs-toggle = "popover" title = "Thank You!" title = "Thank You!" data-content = "Content" data-bs-content = "Popover function works similar to tooltip function">  
+<button href = "#" class = "btn btn-info" type = "button" disabled>  
+Hover Here!  
+</button>  
+</span>  
+</div>  
+<script>  
+var popoverList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "popover"]'))  
+var popoverList2 = popoverList1.map(function (popoverTriggerfun) {  
+return new bootstrap.Popover(popoverTriggerfun)  
+})  
+</script>  <br>
+<div class = "container mt-2">  
+<h5> Bootstrap 5 Popover with HTML Element</h5>  
+<button href = "#" class = "btn btn-info" type = "button" data-bs-offset = "10,15"  data-bs-toggle = "popover" title = "Thank You!" title = "Thank You!" data-content = "Content" data-bs-content = "Popover function works similar to tooltip function">  
+Click Here!  
+</button>  
+</div>  
+<script>  
+var popoverList1 = [].slice.call(document.querySelectorAll('[data-bs-toggle = "popover"]'))  
+var popoverList2 = popoverList1.map(function (popoverTriggerfun) {  
+return new bootstrap.Popover(popoverTriggerfun)  
+})  
+</script>  
+<br>
+<h1> FLex Box</h1>
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title> Bootstrap 5 flex Example </title>  
+<meta charset = "utf-8">  
+<meta name = "viewport" content="width=device-width, initial-scale=1">  
+<link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">  
+<script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">  
+</script>  
+</head>  
+<body>  
+<div class = "container mt-3">  
+<h4> Basic Flex Example </h4>  
+<p> Use the d-flex class to construct a flexbox container and convert direct children into flex items. </p>  
+<div class = "d-flex p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div>  
+</div>  
+<br>
+<div class = "container mt-3">  
+<h4> Inline Flex Example </h4>  
+<p> Use the d-flex class to construct a flexbox container and convert direct children into flex items. </p>  
+<div class = "d-inline-flex p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div>  
+</div>  <br>
+<div class = "container mt-3">  
+<h4> Horizontal Position with Flex function </h4>  
+<p> Use the d-flex class to construct a flexbox container and convert direct children into flex items. </p>  
+<div class = "d-flex flex-row p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div>  
+<div class = "d-flex flex-row-reverse p-2 bg-dark text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div>  
+</div>  <br>
+<div class = "container mt-3">  
+<h4> Vertical Position of Flex Function </h4>  
+<p> Use the d-flex class to construct a flexbox container and convert direct children into flex items. </p>  
+<div class = "d-flex flex-column p-2 bg-info text-white">  
+<div class = "p-2 bg-success w-50"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div>  
+<div class = "d-flex flex-column-reverse p-2 bg-dark text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div>  
+</div>  <br>
+<h2> Justify Content of Flex Function</h2>
+<strong>The "d-flex" uses the "justify-content-*" class to get the required position in the flexbox. Here, we can place content into start, end, center, around, and between positions of the flex function.</strong>
+<div class = "container mt-3">  
+<h4> Justify Content Flex Function </h4>  
+<p> Use the d-flex class to construct a flexbox container and convert direct children into flex items. </p>  
+<div class = "d-flex justify-content-start p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div> <br>  
+<div class = "d-flex justify-content-end p-2 bg-dark text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div> <br>  
+<div class = "d-flex justify-content-center p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div> <br>  
+<div class = "d-flex justify-content-between p-2 bg-dark text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div> <br>  
+<div class = "d-flex justify-content-around p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div>  
+</div>  <br>
+<div class = "container mt-3">  
+<h4> Equal Width Flex Example </h4>  
+<p> Use the d-flex class to construct a flexbox container and convert direct children into flex items. <b>
+The "flex-fill" class creates equal width of the flex item.</b></p>  
+<div class = "d-flex p-2 bg-info text-white">  
+<div class = "p-2 bg-success flex-fill"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger flex-fill"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning flex-fill"> Flexbox 3 </div>  
+</div>  
+<br>  
+<div class = "d-flex bg-dark p-3 text-white">  
+<div class = "bg-success flex-fill"> Flexbox 1 </div>  
+<div class = "bg-danger flex-fill"> Flexbox 2 </div>  
+<div class = "bg-warning flex-fill"> Flexbox 3 </div>  
+</div>  
+</div>  <br>
+<div class = "container mt-3">  
+<h4> Flex Function with Grow Class </h4>  
+<div class = "d-flex p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning flex-grow-1"> Flexbox 3 </div>  
+</div><br>
+<h1> Auto margin</h1>
+<div class = "container mt-3">  
+<h4> Right Side Margin for Flex Function </h4>  
+<div class = "d-flex p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger ms-auto"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div>  
+<h4> Left Side Margin for Flex Function </h4>  
+<div class = "d-flex p-2 bg-info text-white">  
+<div class = "bg-success p-2"> Flexbox 1 </div>  
+<div class = "bg-danger p-2 me-auto"> Flexbox 2 </div>  
+<div class = "bg-warning p-2 "> Flexbox 3 </div>  
+</div>  
+</div>  <br>
+<div class = "container mt-3">  
+<h4> Order of Flex Function </h4>  
+<div class = "d-inline-flex p-2 bg-info text-white">  
+<div class = "p-2 bg-success order-5"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger order-3"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning order-2"> Flexbox 3 </div>  
+<div class = "bg-danger p-2 order-1"> Flexbox 4 </div>  
+<div class = "bg-warning p-2 order-4"> Flexbox 5 </div>  
+</div>  
+</div>  <br>
+<div class = "container mt-3">  
+<h4> Flex Function with Wrap </h4>  
+<div class = "d-flex flex-wrap bg-info text-white">  
+<div class = "p-5 bg-success"> Flexbox 1 </div>  
+<div class = "p-3 bg-danger"> Flexbox 2 </div>  
+<div class = "p-3 bg-warning"> Flexbox 3 </div>  
+</div> <br>  
+<div class = "d-flex flex-wrap-reverse bg-dark text-white">  
+<div class = "p-3 bg-success"> Flexbox 1 </div>  
+<div class = "p-3 bg-danger"> Flexbox 2 </div>  
+<div class = "p-3 bg-warning"> Flexbox 3 </div>  
+</div> <br>  
+<div class = "d-flex flex-nowrap bg-info text-white">  
+<div class = "p-3 bg-success"> Flexbox 1 </div>  
+<div class = "p-3 bg-danger"> Flexbox 2 </div>  
+<div class = "p-3 bg-warning"> Flexbox 3 </div>  
+</div>  
+</div>  <br>
+<div class = "container mt-3">  
+<h4> Item Alignment of Flex Function </h4>  
+<p> Use the d-flex class to construct a flexbox container and convert direct children into flex items. </p>  
+<div class = "d-flex align-item-start p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div> <br>  
+<div class = "d-flex align-item-baseline p-2 bg-dark text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div> <br>  
+<div class = "d-flex align-item-stretch p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div>   
+<h4> Self Alignment of Flex Function </h4>  
+<div class = "d-flex align-self-center p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div>   
+<h4> Content Alignment of Flex Function </h4>  
+<div class = "d-flex align-content-start p-2 bg-info text-white">  
+<div class = "p-2 bg-success"> Flexbox 1 </div>  
+<div class = "p-2 bg-danger"> Flexbox 2 </div>  
+<div class = "p-2 bg-warning"> Flexbox 3 </div>  
+</div> <br>  
+</div>  
+</body>  
+</html>  
+</body>  
+</html>  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Column Layout</title>
+<style>
+    /* Simple styling for demonstration purposes */
+    .container {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .left-column {
+        width: 30%;
+        background-color: #f0f0f0;
+        padding: 20px;
+    }
+    .right-column {
+        flex: 1;
+        background-color: #e0e0e0;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+<header>
+<h1 style="background-color:#FAF5F5; height: 70px;width: 100%;top:0px;"> This a header section</h1>
+</header>
+    <div class="container">
+        <div class="left-column">
+            <h2>Left Column</h2>
+            <p>This is the left column content.</p>
+        </div>
+        <div class="right-column">
+            <h2>Right Column</h2>
+            <p>This is the right column content.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!Doctype html>
+<html><head><script>
+function validate(){
+var name1=document.myform.name.value;
+var pwd=document.myform.password1.value;
+if(name1==null||name1=="")
+{alert("enter your name");
+return false;
+}
+else if(pwd.length<7){
+alert("passwd sholdbe more than 7 cahratcers");
+return false;}
+else{
+alert("login is succeeed");
+return true;}}
+</script>
+</head><body>
+<form name="myform" method="post" onsubmit="return validate()">
+Enter a name:<input type="text" name="name" id="name">
+Enter Password:<input type="password" id="password" name="password1">
+<input type="submit" value="register">
+</form>
+
+</body></html>
+<br>
+<script>  
+function validate(){  
+var num=document.myform.num.value;  
+if (isNaN(num)){  
+  document.getElementById("numloc").innerHTML="Enter Numeric value only";  
+  return false;  
+}else{  
+  return true;  
+  }  
+}  
+</script>  
+<form name="myform" onsubmit="return validate()" >  
+Number: <input type="text" name="num"><span id="numloc"></span><br/>  
+<input type="submit" value="submit">  
+</form> 
+</body></html>

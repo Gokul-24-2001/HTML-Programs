@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head> JS STRING</head>
+<hr color="green"> <br>
+<body>
+<h1> By string literal</h1>
+<script>  
+var str1="This is string literal";  
+document.write(str1);  
+</script>
+<h1> By string object (using new keyword)</h1>
+
+<script>
+var str2=new String("God is Love");
+document.write(str2);
+</script>
+<h1> Jvascript spring methods</h1>
+<h3> string.charAt(index)</h3> <!-- index is used to find out the position-->
+<script>
+var str1="12";  // even f we give number, it consider as string....
+document.write(str1.charAt(1)+"<br/>");  // if splitup from string valueto  individual char value
+document.write(str1.charAt()+"<br/>");  // Returns first character value of the string
+document.write(str1.charAt(str1.length-1)+"<br>");  // print last cahr value
+var str1="apple";  // even f we give number, it consider as string....
+document.write(str1.charAt(1)+"<br/>");  // if splitup from string valueto  individual char value
+document.write(str1.charAt()+"<br/>");  // Returns first character value of the string
+document.write(str1.charAt(str1.length-1));  // print last cahr value
+
+</script>
+<h3> string.charCodeAt(index)</h3> <!-- index is used to find out the position-->
+<script>
+var b="Gokul";
+document.write(b.charCodeAt(3)+"<br>");
+document.write(b.charCodeAt(b.length-1)+"<br>");
+document.write(b.charCodeAt(7));   // if we give more than string length value, then o/p will be 'NAN'....
+
+</script>
+
+<h1> string.concat()</h1>
+<script>
+var c=" This is";
+var d=" my bag";
+var e=" self help is the besthelp";
+document.write(c.concat(d)+"<br>");
+document.write(c.concat(d,e));
+</script>
+<h1> indexOf()</h1>
+<script>
+var a="Good Boy;God is love ";   // it takes space as one count value
+document.write(a.indexOf('d')+"<br>");
+document.write(a.indexOf('is')+"<br>");  // It consider space also .... so 
+document.write(a.indexOf('o',7));  // while specifying index value it won't consider space..
+
+</script>
+<script>
+var web="Learn JavaScript on Javatpoint";
+document.write(web.indexOf("Java",7)); // consider space
+</script>
+<h1>lastIndexOf()</h1>
+<script>  
+var web="Learn JavaScript on Javatpoint";  
+document.write(web.lastIndexOf("Java",19)+"<br>"); 
+document.write(web.lastIndexOf('J')); 
+ 
+</script>  
+<h1> search()</h1>
+<p> The JavaScript string search() method is used to search the regular expression in the given string. This method returns -1, if match is not found.</p>
+<script>
+var a="i live in chennai";
+document.write(a.search('in')+"<br>");   // consider space also here
+var str="JavaScript is a scripting language. Scripting languages are often interpreted";  
+//document.writeln(str.search(/Scripting/)+"<br>");  // gives middle scripting as output
+
+document.writeln(str.search(/Scripting/i)+"<br>");  // i for lowercase and g for upper acse...(/Scripting/g)
+document.write(str.search('javatpoint'));// if we serach words apart from given string.. o/p is -1
+</script>
+<h2> Replace()</h2>
+<b> string.replace(orgstr,newstr);</b>s
+<br>
+<script>
+var str="kingmaker";
+document.write(str.replace("maker","fisher")+"<br>");
+var str=" Learn Node.js on Javatpoint. Node.js is a well-known JavaScript framework.";  
+document.writeln(str.replace(/Node.js/,"AngularJS")+"<br>"); // change the first match
+document.writeln(str.replace(/Node.js/g,"AngularJS")+"<br>); 
+document.writeln(str.replace(/Node.js/gi,"AngularJS"));  // global search
+
+</script>
+<h1> match()</h1>
+<script>
+var str="Javatpoint java";
+document.writeln(str.search(/tpoint/gi)+"<br>");  // find position 
+document.writeln(str.match(/java/gi)+"<br>");
+document.writeln(str.match(/[a]/gi)+"<br>");
+document.writeln(str.match(/[^a]/gi)+"<br>");
+document.writeln(str.match(/[a-p]/g)+"<br>");   // it prints a p and middle of the alaphabets betwn a &p....
+document.writeln(str.match(/[a-p]/));  // it prints only first match 'a'
+
+</script>
+<h1> substr()</h1>
+<b> string.substr(start,length);</b>
+<script>
+var str="Tragidyies";
+document.writeln(str.substr(1,4)+"<br>");// 1 is start ing,4 is how much length
+document.writeln(str.substr(4)+"<br>");  
+document.writeln(str.substr(-5,3)+"<br>");   //In such case, the method starts fetching from the end of the string
+document.writeln(str.substr());  
+
+</script>
+<h2> substring(start,end)</h2>
+<b>string.substring(start,end)  </b>
+<script>
+var a="To be young";
+document.writeln(a.substr()+"<br>");  
+document.writeln(a.substr(0,5)+"<br>");  
+document.writeln(a.substr(6));  
+
+</script>
+<h1> slice()</h1>
+<script>
+var a="To be young";
+document.writeln(a.slice(1,2)+"<br>");  
+document.writeln(a.slice(0,5)+"<br>");  
+var d="ashok RAJU";
+document.write(d.toUpperCase()); // if it sis already uppercase
+
+var l="APPLE";
+document.write(l.toLowerCase());
+</script>
+
+<h1> toLocaleLowerCase()</h1>
+<script>  
+var str="JAVATPOINT";  
+document.writeln(str.toLocaleLowerCase());  
+ 
+var str=new String("Javatpoint")  
+document.writeln(str.toLocaleUpperCase());   
+</script>
+
+<h2> toString() and valueOf()</h2> 
+<script>  
+var str=new String("Javatpoint")  
+document.writeln(str.toString());  // Both are similar
+</script>   
+<script>  
+var str=new String("Javatpoint")  
+document.writeln(str.valueOf());  
+</script> 
+<h1> trim()</h1>
+<p> Removes white space from both sides of the string</p>
+<script>
+text = "     Hello World!     ";
+result = text.trim();
+document.write(result+"<br>");
+var c="Good day"
+document.write(c.split("d")); // it removes space here...
+</script>
+<a href="C:\Users\ADMIN\Documents\gokul_HTML\js-object-keys.html"> output</a>
+</body>
+</html>
