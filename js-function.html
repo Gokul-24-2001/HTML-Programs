@@ -1,0 +1,53 @@
+<html>
+<body>
+<script>  
+function msg(){  
+alert("hello! this is message");  
+}  
+</script>  
+<input type="button" onclick="msg()" value="call function"/>
+<br>
+<script>  
+function getcube(numbe){  
+alert(numbe*numbe*numbe);  
+}  
+</script>  
+<form>  
+<input type="button" value="click" onclick="getcube(5)"/>  
+</form>    <br>
+<script>  
+function getInfo(){  
+return "abc";  
+}  
+</script>  
+<script>  
+document.write(getInfo());  
+</script>
+<br> 
+<script>  
+var pow=new Function("num1","num2","return Math.pow(num1,num2)");  
+document.writeln(pow(2,3));  
+</script>   <br>
+<script>  
+var ad=new Function("num1","num2","return num1+num2");  // var <function name>=
+document.writeln(ad(3,5));  
+</script>
+<script>
+function abc(){
+var a=20;
+var b=10;
+var c= a/b;
+return c;
+</script>
+
+<script>  
+document.write(abc());  
+</script>
+
+
+<form>  
+<input type="button" value="click" onclick="abc()"/>  
+</form>  
+
+</body>
+</html>

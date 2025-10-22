@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<h1> OOPS object</head>
+<body>
+<script>
+/*var employee={
+name:"Gokkul",
+id:24,
+address:"2/85,kabilaramalai"
+}
+
+console.log(employee.name,employee.id)*/
+    /*        
+            	100
+function foo(outer_arg) {
+ let b=100;            
+                       200
+    function inner(inner_arg) {
+        return outer_arg - inner_arg;
+    }
+	
+  return inner;
+}
+
+
+let a =foo(100)
+
+console.log(a(200));*/
+
+class Employee{
+constructor(){
+var name;
+var id;
+}
+setName(empname){
+this.name=empname;
+
+}
+setId(id_num){
+this.id=id_num;
+}
+getName(){
+return this.name;
+}
+getId(){
+return this.id;
+}
+};
+const emp = new Employee();
+emp.setName("arun");
+emp.setId(12);
+document.writeln(emp.getName());
+document.writeln(emp.getId());
+</script>
+<p>document.writeln(emp.getId());</p>
+</body>
+</html>
